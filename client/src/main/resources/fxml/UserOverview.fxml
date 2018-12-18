@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="879.9998779296875" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="by.bsuir.client.controller.UserOverviewController">
+  <children>
+    <Button layoutX="799.0" layoutY="359.0" mnemonicParsing="false" onAction="#returnBack" text="Назад" />
+    <TableView fx:id="userTable" layoutX="14.0" layoutY="14.0" prefHeight="246.0" prefWidth="851.9998779296875">
+      <columns>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="271.0" text="Имя" fx:id="name" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="205.0" text="Права доступа" fx:id="role" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="373.0" text="Email" fx:id="email" />
+      </columns>
+    </TableView>
+    <Button layoutX="14.0" layoutY="281.0" mnemonicParsing="false" onAction="#addUser" prefWidth="187.0" text="Добавить" />
+    <Button layoutX="234.0" layoutY="281.0" mnemonicParsing="false" onAction="#deleteUser" prefWidth="187.0" text="Удалить" />
+    <Button layoutX="462.0" layoutY="281.0" mnemonicParsing="false" onAction="#refactorUser" prefWidth="187.0" text="Изменить" />
+    <Button layoutX="679.0" layoutY="281.0" mnemonicParsing="false" onAction="#refreshUserList" prefWidth="187.0" text="Обновить" />
+    <TextField id="newLogin" fx:id="newLoginField" layoutX="14.0" layoutY="333.0" prefWidth="155.0" promptText="New Login" />
+    <TextField fx:id="newPasswordField" layoutX="179.0" layoutY="333.0" prefWidth="155.0" promptText="New Password" />
+    <TextField fx:id="newEmailField" layoutX="344.0" layoutY="333.0" prefWidth="155.0" promptText="New Email" />
+    <ComboBox fx:id="roleComboBox" layoutX="630.0" layoutY="335.0" prefWidth="155.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="user" />
+          <String fx:value="admin" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <ChoiceBox fx:id="emailBox" layoutX="508.0" layoutY="333.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="@mail.ru" />
+          <String fx:value="@gmail.com" />
+          <String fx:value="@yandex.ru" />
+        </FXCollections>
+      </items>
+    </ChoiceBox>
+  </children>
+</AnchorPane>

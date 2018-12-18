@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="981.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="by.bsuir.client.controller.LeaderViewController">
+  <children>
+    <ComboBox fx:id="testNameBox" layoutX="27.0" layoutY="48.0" prefWidth="247.0" />
+    <TableView fx:id="table" layoutX="14.0" layoutY="100.0" prefHeight="200.0" prefWidth="953.0">
+      <columns>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="379.0" text="Имя" fx:id="nameColumn" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="286.0" text="Email" fx:id="emailColumn" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="278.0" text="Резульатат" fx:id="resultColumn" />
+      </columns>
+    </TableView>
+    <Button layoutX="900.0" layoutY="338.0" mnemonicParsing="false" onAction="#returnBack" text="Назад" />
+    <Button layoutX="307.0" layoutY="47.0" mnemonicParsing="false" onAction="#findFirtFiveResult" text="Найти первые 5" />
+    <Button layoutX="626.0" layoutY="337.0" mnemonicParsing="false" onAction="#deleteResult" text="Удалить" />
+    <Button layoutX="418.0" layoutY="337.0" mnemonicParsing="false" onAction="#addInterview" text="Добавить собеседование" />
+    <Button layoutX="468.0" layoutY="47.0" mnemonicParsing="false" onAction="#showAll" prefWidth="136.0" text="Показать все" />
+    <Button layoutX="714.0" layoutY="338.0" mnemonicParsing="false" onAction="#showUserTimeTable" text="Просмотреть встречи" />
+    <DatePicker fx:id="dateOfInterviewPicker" layoutX="177.0" layoutY="338.0" />
+    <ComboBox fx:id="timeBox" layoutX="27.0" layoutY="338.0" prefWidth="136.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="9:00" />
+          <String fx:value="10:00" />
+          <String fx:value="12:00" />
+          <String fx:value="13:00" />
+          <String fx:value="14:00" />
+          <String fx:value="15:00" />
+          <String fx:value="16:00" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+  </children>
+</AnchorPane>

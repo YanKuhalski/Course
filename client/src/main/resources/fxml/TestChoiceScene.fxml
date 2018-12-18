@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="by.bsuir.client.controller.TestChoiceSceneController">
+  <children>
+    <ChoiceBox fx:id="box" layoutX="129.0" layoutY="109.0" prefWidth="343.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+
+        </FXCollections>
+      </items>
+    </ChoiceBox>
+    <Button fx:id="startButton" onAction="#startTest" layoutX="129.0" layoutY="259.0" mnemonicParsing="false" prefHeight="47.951171875" prefWidth="124.0" text="Приступить" />
+    <Button onAction="#returnBack" layoutX="348.0" layoutY="259.0" mnemonicParsing="false" prefHeight="47.951171875" prefWidth="124.0" text="Назад" />
+  </children>
+</Pane>

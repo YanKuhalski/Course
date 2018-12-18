@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="519.0" prefWidth="726.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="by.bsuir.client.controller.AdminTimetableViewController">
+  <children>
+    <Label layoutX="288.0" layoutY="24.0" text="Интервью соискателя" />
+    <TableView fx:id="table" layoutX="14.0" layoutY="71.0" prefHeight="328.0" prefWidth="698.0">
+      <columns>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="261.0" text="Дата" fx:id="dateColumn" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="216.0" text="Время" fx:id="timeColumn" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="217.0" text="Соискатель" fx:id="aspirantNameColumn" />
+      </columns>
+    </TableView>
+    <Button layoutX="153.0" layoutY="419.0" mnemonicParsing="false"  onAction="#deleteInterview" text="Отменить встречу" />
+    <Button layoutX="614.0" layoutY="420.0" mnemonicParsing="false" onAction="#returnBack" text="Назад" />
+  </children>
+</Pane>

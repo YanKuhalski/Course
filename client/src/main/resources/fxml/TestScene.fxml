@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="612.0" prefWidth="626.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="by.bsuir.client.controller.TestSceneController">
+  <children>
+    <Button layoutX="467.0" layoutY="558.0" mnemonicParsing="false" onAction="#endTest" text="Закончить" />
+    <Button fx:id="nextButton" layoutX="366.0" layoutY="559.0" mnemonicParsing="false" onAction="#nextQuestion" text="Далее &gt;&gt;" />
+    <TextArea fx:id="question" layoutX="37.0" layoutY="14.0" prefHeight="292.0" text="Label" />
+    <Label fx:id="firstText" layoutX="84.0" layoutY="355.0" text="Label" />
+    <Label fx:id="secondText" layoutX="84.0" layoutY="395.0" text="Label" />
+    <Label fx:id="thirdText" layoutX="84.0" layoutY="444.0" text="Label" />
+    <Label fx:id="fourthText" layoutX="84.0" layoutY="491.0" text="Label" />
+    <RadioButton fx:id="firstRadiButton" layoutX="51.0" layoutY="355.0" mnemonicParsing="false" text="" />
+    <RadioButton fx:id="secondRadiButton" layoutX="51.0" layoutY="395.0" mnemonicParsing="false" text="" />
+    <RadioButton fx:id="thirdRadiButton" layoutX="51.0" layoutY="444.0" mnemonicParsing="false" text="" />
+    <RadioButton fx:id="fourthRadiButton" layoutX="51.0" layoutY="491.0" mnemonicParsing="false" text="" />
+  </children>
+</Pane>

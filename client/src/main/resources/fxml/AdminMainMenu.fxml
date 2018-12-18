@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="609.0" prefWidth="502.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="by.bsuir.client.controller.AdminMainMenuController">
+  <children>
+    <Button layoutX="78.0" layoutY="23.0" mnemonicParsing="false" onAction="#workWithUsers" prefHeight="96.951171875" prefWidth="345.9999000000025" text="Просмотр и редактирование пользователей" textAlignment="CENTER" />
+    <Button layoutX="78.0" layoutY="131.0" mnemonicParsing="false" onAction="#workWithInterview" prefHeight="96.951171875" prefWidth="345.9998779296875" text="Назначение интервью" />
+    <Button layoutX="78.0" layoutY="238.0" mnemonicParsing="false" onAction="#showAdminInterview" prefHeight="96.951171875" prefWidth="345.9998779296875" text="Просмотреть мои интервью" />
+    <Button layoutX="78.0" layoutY="347.0" mnemonicParsing="false" onAction="#showChart" prefHeight="96.951171875" prefWidth="345.9998779296875" text="Просмотр графиков" />
+    <Button layoutX="78.0" layoutY="455.0" mnemonicParsing="false" prefHeight="96.951171875" prefWidth="345.9998779296875" text="Сохранить БД" />
+  </children>
+</Pane>

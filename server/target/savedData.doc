@@ -1,0 +1,31 @@
+-------------------USER BASE---------------------
+insert into user user (login,password,role,email) values ('admin','admin','admin','YanKuhalski@gmail.ru');
+insert into user user (login,password,role,email) values ('user','user','user','Vano@gmail.ru');
+insert into user user (login,password,role,email) values ('alex','uriev','user','Alex@gmail.com');
+insert into user user (login,password,role,email) values ('boris','ttttt','user','BorisPsin@mail.ru');
+insert into user user (login,password,role,email) values ('artur','vologin','user','KonZa500@mail.ru');
+insert into user user (login,password,role,email) values ('roma','24124124','user','UpdateEmail@mail.ru');
+insert into user user (login,password,role,email) values ('yan','kuhalski','user','YanKuhalski@gmail.com');
+
+-------------------RESULT BASE---------------------
+insert into result  (user_id ,test_id,result) values  (2,1,12.4);
+insert into result  (user_id ,test_id,result) values  (3,1,44.4);
+insert into result  (user_id ,test_id,result) values  (4,1,55.4);
+insert into result  (user_id ,test_id,result) values  (5,1,6.4);
+insert into result  (user_id ,test_id,result) values  (6,1,70.4);
+insert into result  (user_id ,test_id,result) values  (6,1,11.4);
+insert into result  (user_id ,test_id,result) values  (2,2,92.4);
+insert into result  (user_id ,test_id,result) values  (3,2,88.4);
+insert into result  (user_id ,test_id,result) values  (4,2,25.4);
+insert into result  (user_id ,test_id,result) values  (5,2,11.4);
+insert into result  (user_id ,test_id,result) values  (7,2,88.4);
+
+-------------------INTERVIEW BASE---------------------
+insert into interview user (time,date,user_id,hr_id) values ('9:00','2018-12-30','4','1');
+insert into interview user (time,date,user_id,hr_id) values ('12:00','2018-12-30','4','1');
+insert into interview user (time,date,user_id,hr_id) values ('13:00','2018-12-30','4','1');
+
+-------------------TEST BASE---------------------
+insert into test (name) values ('Java - для начинающих');
+insert into test (name) values ('Java - средний уровень');
+insert into test (name) values ('Java - эксперт');

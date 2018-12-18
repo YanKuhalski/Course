@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="331.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="by.bsuir.client.controller.UserMainMenuController">
+  <children>
+    <Button layoutX="33.0" layoutY="76.0" mnemonicParsing="false" onAction="#choiseTest" prefHeight="94.951171875" prefWidth="257.0" text="Пройти тесторование" />
+    <Button layoutX="33.0" layoutY="208.0" mnemonicParsing="false" onAction="#showUserTimetable" prefHeight="94.951171875" prefWidth="257.0" text="Просмотреть назнaченые собеседования" />
+    <Button layoutX="300.0" layoutY="76.0" mnemonicParsing="false" onAction="#showContacts" prefHeight="94.951171875" prefWidth="257.0" text="Контакты HR" />
+    <Button layoutX="300.0" layoutY="208.0" mnemonicParsing="false" prefHeight="94.951171875" prefWidth="257.0" text="Просмотреть мои интервью" />
+  </children>
+</Pane>
